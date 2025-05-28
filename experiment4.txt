@@ -1,0 +1,166 @@
+1)WPP TO FIND GCD OF TWO NUMBERS USING FUNCTIONS?
+def gcd(a,b):
+
+    while b!=0:
+
+        a,b=b,a%b
+ 
+       return a
+
+        num1=int(input("enter the first number:"))
+ 
+       num2=int(input("enter the second number:"))
+
+
+        result=gcd(num1,num2)
+
+        print("the gcd of",num1,"and",num2,"is",result)
+OUTPUT:
+enter the first number:18
+
+enter the second number:36
+
+the gcd of 18 and 36 is 36
+
+
+2)WPP TO FIND THE EVEN OR ODD NUMBER USING FUNCTION?
+def check_even_odd(number):
+
+    if number%2==0:
+ 
+       return"even"
+
+    else:
+ 
+       return"odd"
+
+num=int(input("enter a number:"))
+
+result=check_even_odd(num)
+
+print("the number is",result)
+OUTPUT:
+enter a number:8
+
+the number is even
+
+
+3)
+def factorial(n):
+
+    if n==0:
+ 
+       return 1
+
+    else:
+
+         return n*factorial(n-1)
+
+for i in range(1,11):
+ 
+       result=factorial(i)
+
+print("factorial of",i,"is",result)
+OUTPUT:
+factorial of 10 is 3628800
+4)WPP TO FIND FACTORIAL VALUE OF A GIVEN NUMBR USING FUNCTION?
+def factorial(n):
+ 
+   if n==0:
+ 
+       return 1
+
+    else:
+
+        return n*factorial(n-1)
+
+num=int(input("enter a number:"))
+
+result=factorial(num)
+
+print("the factorial of",num,"is",result)
+OUTPUT:
+enter a number:5
+
+the factorial of 5 is 120
+
+5)WPP TO FIND SUM OF A LIST USING FUNCTION?
+def calculate_sum(numbers):
+ 
+   total=0
+ 
+   for numm in numbers:
+
+        total+=num
+ 
+       return total
+
+list=[]
+
+n=int(input("enter the number of elements in the list:"))
+
+for i in range(n):
+
+ num=eval(input("enter elements{}:".format(i+1)))
+
+list.append(num)
+
+result=calculate_sum(list)
+
+print("the sum of the list is",result)
+OUTPUT:
+enter the number of elements in the list:5
+
+enter elements1:10
+
+enter elements2:20
+
+enter elements3:30
+
+enter elements4:40
+
+enter elements5:50
+
+the sum of the list is 150
+
+
+6)WPP TO PERFORM ARTHMATIC OPERATIONS USING FUNCTIONS?
+def add(x,y):
+ 
+   return x+y
+
+def subtract(x,y):
+ 
+   return x-y
+
+def multiply(x,y):
+ 
+   return x*y
+
+def divided(x,y):
+ 
+   return x/y
+
+num1=float(input("enter the first numbe:"))
+
+num2=float(input("enter the second number:"))
+
+print("addition:",add(num1,num2))
+
+print("subtraction:",subtract(num1,num2))
+
+print("multiplication:",multiply(num1,num2))
+
+print("division:",divided(num1,num2))
+OUTPUT:
+enter the first numbe:10
+
+enter the second number:5
+
+addition: 15.0
+
+subtraction: 5.0
+
+multiplication: 50.0
+
+division: 2.0

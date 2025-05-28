@@ -1,0 +1,178 @@
+1)wpp to read your name age &check you're eligible for voting?
+name=input("enter your name:")
+
+age=int(input("enter your age:"))
+
+if age>=18:
+
+    print("congractulations",name+",you are eligible to vote!")
+OUTPUT:
+enter your name:manju
+
+enter your age:22
+
+congractulations manju,you are eligible to vote!
+
+
+
+2)to accept a number and verify given number is even or odd?
+
+num=int(input("enter any number:"))
+
+if num%2==0:
+
+    print("the given number is even")
+
+else:
+
+    print("the given number is odd")
+OUTPUT:
+enter any number:4
+
+the given number is even
+
+3)WPP TO READ A NUMBER &DISPLAY THE RESPECTIVE IN WORD FORMAT?
+num=int(input("enter a number:"))
+
+if num==0:
+ 
+       print("zero")
+ 
+    elif num==1:
+
+        print("one")
+
+    elif num==2:
+
+        print("two")
+ 
+    elif num==3:
+  
+        print("three")
+
+    elif num==4:
+
+        print("five")
+
+    elif num==5:
+ 
+       print("six")
+
+    elif num=6:
+
+       print("seven")
+ 
+    elif num=7:
+
+        print("eight")
+
+    elif num=8:
+ 
+       print("nine")
+
+   else:
+ 
+       print("number out of range")
+OUTPUT:
+enter a number:5
+five
+4)WPP TO CHECK WHETHER THE GIVEN IS IN BETWEEN 1TO100 USING IF..ELSE STATEMENT?
+num=int(input("enter a number:"))
+
+if num>=1 and num<=100:
+
+    print("the number",num,"in between number")
+
+else:
+ 
+       print("the number ",num,"is not between number")
+OUTPUT:
+enter a number:57
+
+the number 57 in between number
+
+5)WPP USING WHILE LOOP TO DISPLAY FIRST N NUMBERS DIVISIBLE BY 5?
+N=int(input("enter the value of N:"))
+
+count=0
+
+num=5
+
+while count<N:
+ 
+   print(num)
+
+    num+=5
+
+    count+=1
+OUTPUT:
+enter the value of N:2
+
+5
+
+10
+6)WPP TO ACCEPT SOME LIST ELEMENTS& FIND SUM OF ELEMENTS?
+mylist=input("enter alist of numbers separated by space:")
+
+mylist=list(map(int,mylist.split()))
+
+sum=0
+
+for num in mylist:
+
+    sum+=num
+
+    print("the sum of the number is:",sum)
+OUTPUT:
+enter alist of numbers separated by space:
+10 20 30 40 50
+
+the sum of the number is: 10
+
+the sum of the number is: 30
+
+the sum of the number is: 60
+
+the sum of the number is: 100
+
+the sum of the number is: 150
+
+7)WPP TO PRINT NUMBERS FROM 1 TO 10,SKIPPING 5 AND BREAKING AT 8?
+for i in range(1,11):
+
+    if i==5:
+
+        continue
+
+    if i==8:
+
+        break
+
+    print(i)
+OUTPUT:
+1
+
+2
+
+3
+
+4
+
+6
+
+7
+
+8)WPP TO PRINT EVEN NUMBERS BETWEEN 0 TO 20 ONLY USING WHILE LOOP?
+num=0
+
+while num<=20:
+
+    if num%2==0:
+ 
+       print(num,end=",")
+
+num+=1
+OUTPUT:
+0,2,4,6,8,10,12,14,16,18,20
+
+
