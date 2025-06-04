@@ -1,0 +1,55 @@
+1)WPP THAT CREATES AND RETURNS ON OBJECTS?
+class car:
+    def __init__(self,brand,speed):
+        self.brand=brand
+        self.speed=speed
+    def display(self):
+          print(f"brand:{self.brand},speed:{self.speed} km/n")
+def create_car():
+    car1=car("toyato",180)
+    return car1
+my_car=create_car()
+my_car.display()
+OUTPUT:brand:toyato,speed:180 km/n
+
+2)WRITE A FUN THAT STU OBJECT AS AN ARGUMENT AND PRINTS THE STU IN FORMATION?
+class Student:
+    def __init__(self, name, marks):
+        self.name = name
+        self.marks = marks
+def print_student_info(student):
+        print(f"Name: {student.name}, Marks: {student.marks}")
+s1 = Student("tillu", 92)
+print_student_info(s1)
+OUTPUT:
+
+OUTPUT:Name: tillu, Marks: 92
+3)RETURNS A CIRCLE OBJECT CREATED WITH A GIVEN RADIUS?
+class Circle:
+    def __init__(self, radius):
+        self.radius = radius
+    def area(self):
+        return 3.14 * self.radius * self.radius
+def get_circle(r):
+         return Circle(r)
+c = get_circle(5)
+print("Area of circle:", c.area())
+OUTPUT:
+Area of circle: 78.5
+4)WRITE A FUN THAT RETURNS A LIST OF 3 BOOK OBJECTS?
+class Book:
+    def __init__(self, title):
+        self.title = title
+def create_book_list():
+    return [Book("Python 101"), Book("AI Basics"), Book("Data Science")]
+books = create_book_list()
+for b in books:
+    print("Book title:", b.title)
+output:
+Book title: Python 101
+
+Book title: AI Basics
+
+Book title: Data Science
+
+
