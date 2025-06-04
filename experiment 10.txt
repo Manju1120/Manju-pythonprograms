@@ -1,0 +1,93 @@
+1)WPP FOR DIVISION ZERO ERROR?
+try:
+    x=10/0
+ 
+   except exception ase:
+ 
+       print("an error occured:",str(e)
+OUTPUT:
+an error occurrred:division by zero
+2)WPP TO HANDLE MULTIPLE EXCEPTION?
+try:
+
+    num=int(input("enter a number:"))
+ 
+    result=10/num
+
+    print("result:",result)
+
+except valueerror:
+
+    print("error:invalid input!please enter a valid number:")
+
+except zerodivisonerror:
+ 
+   print("error;division by zero!")
+
+OUTPUT:enter a number:2
+
+result: 5.0
+
+3)WPP TO HANDLE MULTIPLE EXCEPTIONS USING ELSECLAUSE?
+try:
+
+ 
+   num=int(input("enter a number:"))
+ 
+ 
+   result=10/num
+
+except valueerror:
+
+
+    print("error:invalid input!please enter a valid number:")
+
+
+except zerodivisonerror:
+ 
+
+   print("error;division by zero!")
+
+else:
+ 
+   print("result:",result)
+OUTPUT:
+enter a number:2
+
+result: 5.0
+
+4)WPP TO PERFORM EXCEPTIONS WITH FINAL BLOCK?
+try:
+
+    file=open("myfile.txt","r")
+
+except IOerror:
+
+  print("error:unable to read the file!")
+
+finally:
+ 
+ file.close()
+OUTPUT:Traceback (most recent call last):
+  
+File "<main.py>", line 6, in <module>
+
+NameError: name 'file' is not defined
+
+5)WPP TO FIND OUT THE GIVEN NUMBER IS WITHIN RANGE OR NOT?
+try:
+
+    x=int(input("enter a number upto 100:"))
+ 
+   if x>100:
+
+        raise valueError(x)
+except valueError:
+ 
+   print(x,"is out of allowed range")
+
+else:
+ 
+    print(x,"is within the allowed range")
+OUTPUT:enter a number upto 100:123
+123 is out of allowed range

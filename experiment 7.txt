@@ -1,0 +1,108 @@
+1)WPP TO FIN FIBONACCI SERIES OF NUMBER USING RECY=URSIVE FUNCTION?
+def fibonacci(Number):
+    if(Number == 0):
+        return 0
+    elif Number == 1:
+        return 1
+    else:
+        return fibonacci(Number - 2) + fibonacci(Number - 1)
+Number = int(input("Please Enter the Fibonacci Number Range = "))
+Sum = 0
+for Num in range(Number):
+    print(fibonacci(Num), end = '')
+    Sum = Sum + fibonacci(Num)
+print("\nThe Sum of Fibonacci Series Numbers = %d" %Sum)
+
+OUTPUT:Please Enter the Fibonacci Number Range = 8
+
+011235813
+The Sum of Fibonacci Series Numbers = 33
+
+2)FIND A FACTORIAL VALUE OF GIVEN NUMBER USING RECURSIVE FUNCTION?
+def factorial(n):
+
+    if n==0:
+ 
+       return 0
+ 
+   if n==1:
+
+        return 1
+
+    else:
+
+        return n * factorial(n-1)
+
+n=int(input("enter any number:"))
+
+print('factorial value of',n,'is:',factorial(n))
+
+OUTPUT:enter any number:5
+
+factorial value of 5 is: 120
+
+3)WPP TO FIND TEH GIVEN STRING IS PALINDROME OR NOT?
+def pal(s):
+
+    s=s.lower()
+ 
+   if len(s)<=1:
+
+        return True
+ 
+   elif s[0]!=s[-1]:
+
+        return false
+
+    else:
+
+        return pal(s[1:-1])
+myinput=input("enter a string:")
+
+if pal(myinput):
+
+    print(f"'{myinput}'is a palindrome.")
+
+else:
+
+    print(f"'{myinput}'is not a palindrome.")
+
+OUTPUT:
+enter a string:MADAM
+
+'MADAM'is a palindrome.
+
+4)WPP TO GCD OF TWO NUMBERS USING RECURSIVE FUNCTION?
+def gcd(a,b):
+ 
+   if b==0:
+
+        return a
+ 
+   else:
+
+        return gcd(b,a%b)
+
+x=input("enter the first integer:")
+
+y=input("enter the second integer:")
+
+if x.isdigit()and y.isdigit():
+
+    a=int(x)
+
+    b=int(y)
+
+    result=gcd(a,b)
+
+    print(f"the gcd of{a}and{b}is:",result)
+else:
+
+    print("please enter valid integers.")
+
+OUTPUT:
+enter the first integer:36
+
+enter the second integer:18
+
+the gcd of36and18is: 18
